@@ -3,7 +3,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prattoy Saha | Tech & Business Portfolio</title>  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />  <style>
     :root {
       --bg-main: #05070d;
       --bg-soft: #0b1020;
@@ -14,40 +14,43 @@
       --accent: #00ffa3;
       --text-main: #e6e8ee;
       --text-muted: #a0a6bd;
-    }* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Poppins', sans-serif; background: radial-gradient(circle at top, #0c1228, #03040a 65%); color: var(--text-main); line-height: 1.7; overflow-x: hidden; }
+    }
 
-header { padding: 90px 20px 70px; text-align: center; position: relative; }
-.hero-img { width: 190px; height: 190px; border-radius: 50%; object-fit: cover; margin-bottom: 28px; border: 3px solid rgba(0,229,255,0.7); box-shadow: 0 0 25px rgba(0,229,255,0.6),0 0 60px rgba(124,77,255,0.4); }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: radial-gradient(circle at top, #0c1228, #03040a 65%); color: var(--text-main); line-height: 1.7; overflow-x: hidden; }
 
-header h1 { font-family: 'Orbitron', sans-serif; font-size: 3.1rem; letter-spacing: 1px; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-header h1 span { display: block; font-size: 1.2rem; font-weight: 400; color: var(--text-muted); margin-top: 12px; -webkit-text-fill-color: var(--text-muted); }
-header p { max-width: 720px; margin: 26px auto 0; font-size: 1.05rem; color: var(--text-muted); }
-.btn { display: inline-block; margin-top: 34px; padding: 14px 36px; border-radius: 40px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #02030a; font-weight: 600; text-decoration: none; box-shadow: 0 12px 40px rgba(0,229,255,0.35); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.btn:hover { transform: translateY(-4px); box-shadow: 0 20px 55px rgba(124,77,255,0.45); }
+    header { padding: 90px 20px 70px; text-align: center; position: relative; }
+    .hero-img { width: 190px; height: 190px; border-radius: 50%; object-fit: cover; margin-bottom: 28px; border: 3px solid rgba(0,229,255,0.7); box-shadow: 0 0 25px rgba(0,229,255,0.6),0 0 60px rgba(124,77,255,0.4); }
+    header h1 { font-family: 'Orbitron', sans-serif; font-size: 3.1rem; letter-spacing: 1px; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    header h1 span { display: block; font-size: 1.2rem; font-weight: 400; color: var(--text-muted); margin-top: 12px; -webkit-text-fill-color: var(--text-muted); }
+    header p { max-width: 720px; margin: 26px auto 0; font-size: 1.05rem; color: var(--text-muted); }
+    .btn { display: inline-block; margin-top: 34px; padding: 14px 36px; border-radius: 40px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #02030a; font-weight: 600; text-decoration: none; box-shadow: 0 12px 40px rgba(0,229,255,0.35); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .btn:hover { transform: translateY(-4px); box-shadow: 0 20px 55px rgba(124,77,255,0.45); }
 
-section { max-width: 1150px; margin: auto; padding: 80px 22px; }
-section h2 { text-align: center; font-family: 'Orbitron', sans-serif; font-size: 2.2rem; margin-bottom: 50px; background: linear-gradient(90deg, var(--accent), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
-.card { background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0)); border: 1px solid var(--border); border-radius: 22px; padding: 28px 26px; backdrop-filter: blur(14px); transition: transform 0.35s ease, box-shadow 0.35s ease; }
-.card:hover { transform: translateY(-8px); box-shadow: 0 30px 70px rgba(0,0,0,0.6); }
-.card h3 { color: var(--primary); margin-bottom: 14px; font-size: 1.25rem; }
-.card p { font-size: 0.96rem; color: var(--text-muted); }
+    section { max-width: 1150px; margin: auto; padding: 80px 22px; }
+    section h2 { text-align: center; font-family: 'Orbitron', sans-serif; font-size: 2.2rem; margin-bottom: 50px; background: linear-gradient(90deg, var(--accent), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0)); border: 1px solid var(--border); border-radius: 22px; padding: 28px 26px; backdrop-filter: blur(14px); transition: transform 0.35s ease, box-shadow 0.35s ease; }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 30px 70px rgba(0,0,0,0.6); }
+    .card h3 { color: var(--primary); margin-bottom: 14px; font-size: 1.25rem; }
+    .card p { font-size: 0.96rem; color: var(--text-muted); }
 
-footer { padding: 45px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.08); background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0)); }
-footer p { color: var(--text-muted); font-size: 0.9rem; }
-footer a { color: var(--primary); margin: 0 10px; text-decoration: none; }
+    footer { padding: 45px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.08); background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0)); }
+    footer p { color: var(--text-muted); font-size: 0.9rem; }
 
-/* Floating Social Links */
-.social-links { position: fixed; top: 50%; right: 12px; transform: translateY(-50%); display: flex; flex-direction: column; gap: 16px; z-index: 999; }
-.social-links a { display: flex; width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 50%; align-items: center; justify-content: center; color: #02030a; text-decoration: none; font-size: 22px; box-shadow: 0 8px 22px rgba(0,229,255,0.35); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.social-links a:hover { transform: translateY(-4px); box-shadow: 0 15px 45px rgba(124,77,255,0.45); }
+    /* Floating Social Links */
+    .social-links { position: fixed; top: 50%; right: 12px; transform: translateY(-50%); display: flex; flex-direction: column; gap: 16px; z-index: 999; }
+    .social-links a { display: flex; width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 50%; align-items: center; justify-content: center; color: #02030a; text-decoration: none; font-size: 22px; box-shadow: 0 8px 22px rgba(0,229,255,0.35); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .social-links a:hover { transform: translateY(-4px); box-shadow: 0 15px 45px rgba(124,77,255,0.45); }
 
-@media (max-width: 600px) { header h1 { font-size: 2.4rem; } section h2 { font-size: 1.8rem; } .social-links { flex-direction: row; bottom: 12px; top: auto; right: 50%; transform: translateX(50%); } }
+    /* Visitor Counter */
+    .visitor-box { position: fixed; bottom: 20px; right: 20px; display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: rgba(5,7,13,0.7); border: 1px solid rgba(0,229,255,0.25); border-radius: 28px; color: #00e5ff; font-size: 13px; cursor: default; backdrop-filter: blur(6px); transition: all 0.25s ease; z-index: 1000; }
+    .visitor-box span { max-width: 0; overflow: hidden; white-space: nowrap; opacity: 0; transition: max-width 0.25s ease, opacity 0.25s ease; }
+    .visitor-box:hover { box-shadow: 0 0 18px rgba(0,229,255,0.4); }
+    .visitor-box:hover span { max-width: 60px; opacity: 1; }
 
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
+    @media (max-width: 600px) { header h1 { font-size: 2.4rem; } section h2 { font-size: 1.8rem; } .social-links { flex-direction: row; bottom: 12px; top: auto; right: 50%; transform: translateX(50%); } .visitor-box { bottom: 12px; right: 12px; font-size: 12px; padding: 5px 10px; } .visitor-box:hover span { max-width: 50px; } }
+  </style></head>
 <body><header>
   <img src="profile.png" alt="Prattoy Saha" class="hero-img" />
   <h1>Prattoy Saha<span>Tech Enthusiast • Business Strategist • Problem Solver</span></h1>
@@ -72,36 +75,40 @@ footer a { color: var(--primary); margin: 0 10px; text-decoration: none; }
   <div class="grid">
     <div class="card"><h3>Collaboration</h3><p>Open to partnerships, consulting, and long-term technology-focused business opportunities.</p></div>
     <div class="card"><h3>Contact</h3><p>
-        <i class="fas fa-envelope"></i> your@email.com<br><br>
-        <div style="display:flex;gap:18px;align-items:center">
-          <a href="https://fb.com/prattoysahaofficial" target="_blank" title="Facebook" style="color:var(--primary);font-size:22px">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://wa.me/8801XXXXXXXXX" target="_blank" title="WhatsApp" style="color:#25D366;font-size:22px">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-        </div>
-      </p></div>
+      <i class="fas fa-envelope"></i> your@email.com<br><br>
+      <div style="display:flex;gap:18px;align-items:center">
+        <a href="https://fb.com/prattoysahaofficial" target="_blank" title="Facebook" style="color:var(--primary);font-size:22px">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://wa.me/8801XXXXXXXXX" target="_blank" title="WhatsApp" style="color:#25D366;font-size:22px">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </p></div>
   </div>
 </section><!-- Floating Social Links --><div class="social-links">
   <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
   <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
   <a href="https://twitter.com/yourusername" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
   <a href="https://fb.com/prattoysahaofficial" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-  <a href="https://wa.me/yourwhatsappphonenumber" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://wa.me/8801XXXXXXXXX" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div><!-- Visitor Counter --><div class="visitor-box">
+  <i class="fas fa-eye"></i>
+  <span id="visits">—</span>
 </div><footer>
   <p>© 2026 Prattoy Saha · Built with precision & future vision</p>
 </footer><script>
-  // Disable right click
+  // Disable right click & inspect
   document.addEventListener('contextmenu', event => event.preventDefault());
-
-  // Disable certain keys (F12, Ctrl+Shift+I, Ctrl+U)
   document.addEventListener('keydown', function(event) {
-    if(event.key === 'F12' || 
-       (event.ctrlKey && event.shiftKey && event.key === 'I') ||
-       (event.ctrlKey && event.key === 'U')) {
+    if(event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I') || (event.ctrlKey && event.key === 'U')) {
       event.preventDefault();
     }
   });
+
+  // Visitor Counter API
+  fetch('https://api.countapi.xyz/hit/prattoysaha/portfolio')
+    .then(res => res.json())
+    .then(data => { document.getElementById('visits').innerText = data.value; });
 </script></body>
 </html>
