@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prattoy Saha | Tech & Business Portfolio</title>
+
+  <meta name="description" content="Tech & Business Portfolio of Prattoy Saha - systems, energy, and digital strategy builder.">
+  <meta property="og:title" content="Prattoy Saha Portfolio">
+  <meta property="og:description" content="Tech, Business & Energy Systems Portfolio">
+  <meta property="og:type" content="website">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    :root {
+      --bg:#05070d;
+      --primary:#00e5ff;
+      --secondary:#7c4dff;
+      --accent:#00ffa3;
+      --text:#e6e8ee;
+      --muted:#a0a6bd;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:Poppins;
+      background:radial-gradient(circle,#0c1228,#03040a);
+      color:var(--text);
+      overflow-x:hidden;
+    }
+
+    header{
+      text-align:center;
+      padding:80px 20px;
+    }
+
+    .hero-img{
+      width:180px;height:180px;border-radius:50%;
+      border:3px solid var(--primary);
+      box-shadow:0 0 30px rgba(0,229,255,0.4);
+    }
+
+    h1{
+      font-family:Orbitron;
+      font-size:2.8rem;
+      background:linear-gradient(90deg,var(--primary),var(--secondary));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:14px 30px;
+      border-radius:40px;
+      border:none;
+      cursor:pointer;
+      background:linear-gradient(135deg,var(--primary),var(--secondary));
+      font-weight:600;
+      color:#000;
+      transition:0.3s;
+    }
+
+    .btn:hover{transform:translateY(-4px);}
+
+    section{
+      max-width:1100px;
+      margin:auto;
+      padding:70px 20px;
+    }
+
+    h2{
+      text-align:center;
+      font-family:Orbitron;
+      margin-bottom:40px;
+      background:linear-gradient(90deg,var(--accent),var(--primary));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      padding:25px;
+      border-radius:18px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter:blur(10px);
+      transition:0.3s;
+    }
+
+    .card:hover{transform:translateY(-6px);}
+
+    /* Floating buttons */
+    .social{
+      position:fixed;
+      right:15px;
+      top:50%;
+      transform:translateY(-50%);
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .social a{
+      width:45px;height:45px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--primary),var(--secondary));
+      color:#000;
+    }
+
+    /* GAME MODAL */
+    .modal{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,0.92);
+      display:none;
+      z-index:9999;
+    }
+
+    .modal-content{
+      position:relative;
+      width:100%;
+      height:100%;
+    }
+
+    .close{
+      position:absolute;
+      top:15px;
+      right:20px;
+      z-index:10000;
+      background:#ff4d4d;
+      border:none;
+      padding:10px 15px;
+      border-radius:8px;
+      cursor:pointer;
+      color:white;
+    }
+
+    iframe{
+      width:100%;
+      height:100%;
+      border:none;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px;
+      color:var(--muted);
+      border-top:1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="profile.png" class="hero-img"/>
+  <h1>Prattoy Saha</h1>
+  <p>Tech • Business • Systems Builder</p>
+
+  <button class="btn" onclick="openGame()">🎮 Play Snake Game</button>
+</header>
+
+<section>
+  <h2>About</h2>
+  <div class="grid">
+    <div class="card">Vision-driven tech builder</div>
+    <div class="card">Business & ROI focused mindset</div>
+    <div class="card">Systems & automation engineer</div>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">Web Systems</div>
+    <div class="card">Energy Optimization</div>
+    <div class="card">Digital Strategy</div>
+  </div>
+</section>
+
+<section>
+  <h2>Connect</h2>
+  <div class="card">
+    <p>Collaboration & consulting available</p>
+  </div>
+</section>
+
+<!-- GAME MODAL -->
+<div id="gameModal" class="modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeGame()">✖ Close</button>
+    <iframe src="https://prattoysaha.github.io/snake-game/"></iframe>
+  </div>
+</div>
+
+<!-- FLOAT SOCIAL -->
+<div class="social">
+  <a href="https://fb.com/prattoysahaofficial"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://wa.me/8801XXXXXXXXX"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://linkedin.com/in/prattoysaha"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+<footer>
+  © 2026 Prattoy Saha
+</footer>
+
+<script>
+  function openGame(){
+    document.getElementById("gameModal").style.display="block";
+  }
+
+  function closeGame(){
+    document.getElementById("gameModal").style.display="none";
+  }
+</script>
+
+</body>
+</html>
